@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,6 +7,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Home Page</title>
 </head>
+
 <body>
     <div class="wrapper">
         <nav>
@@ -20,7 +22,78 @@
                 <li><a href="" class="tw">Twitter</a></li>
             </ul>
         </nav>
+        <div style="margin:20px">
+            <span>Layout:</span>
+            <a href="#" class="stack" onclick="return stackLayout()">Stack</a>
+            <a href="#" class="grid" onclick="return gridLayout()">Grid</a>
+        </div>
+        <section id="blocks">
+            <article>
+                <h2>I pity the fool...</h2>
+                <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur
+                    ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc.
+                    Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus
+                    rutrum nec fermentum urna congue.</p>
+            </article>
+            <article>
+                <h2>Get to the chopper...</h2>
+                <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur
+                    ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc.
+                    Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus
+                    rutrum nec fermentum urna congue. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu.
+                    Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+            </article>
+            <article>
+                <h2>What's a horse doing on a spaceship...?</h2>
+                <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur
+                    ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc.
+                    Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus
+                    rutrum nec fermentum urna congue.</p>
+            </article>
+            <article>
+                <h2>I pity the fool...</h2>
+                <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur
+                    ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc.
+                    Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus
+                    rutrum nec fermentum urna congue.</p>
+            </article>
+            <article>
+                <h2>Get to the chopper...</h2>
+                <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur
+                    ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc.
+                    Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus
+                    rutrum nec fermentum urna congue.</p>
+            </article>
+            <article>
+                <h2>What's a horse doing on a spaceship...?</h2>
+                <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur
+                    ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc.
+                    Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus
+                    rutrum nec fermentum urna congue.</p>
+            </article>
+        </section>
     </div>
-    
+    <script>
+        function stackLayout(){
+            const articles = document.querySelectorAll('article');
+            articles.forEach(article=>{
+                article.classList.add('stack');
+            });
+        }
+        function gridLayout(){
+            const articles = document.querySelectorAll('article');
+            articles.forEach(article=>{
+                article.classList.remove('stack');
+            });
+        }
+        // const stackLayout = document.querySelector('.stack');
+        // stackLayout.addEventListener(
+        //     onclick,
+        //     () => {
+        //         console.log('hi')
+        //     });
+    //   console.log(stackLayout.attributes);
+    </script>
 </body>
+
 </html>
